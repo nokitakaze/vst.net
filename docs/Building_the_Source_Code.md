@@ -1,6 +1,8 @@
 Here are some tips in order for you to build the source code.
 
-I use Visual Studio 2012 Professional edition to write the code. But I think it should work with VS2012 Express edition as well (not tested). All projects target .NET Framework 2.0 (CLR2) and 4.0 (CLR4). I use the post build event in project files to copy the assembly to the _SharedAssemblies folder. I use the post build event in the Samples projects to copy and rename the project assembly to the root debug directory (also used as target output in the Interop project). 
+I use Visual Studio 2012\* Professional edition to write the code. But I think it should work with VS2012 Express edition as well (not tested). All projects target .NET Framework 2.0 (CLR2) and 4.0 (CLR4). I use the post build event in project files to copy the assembly to the _SharedAssemblies folder. I use the post build event in the Samples projects to copy and rename the project assembly to the root debug directory (also used as target output in the Interop project). 
+
+\* Microsoft Visual Studio 2017 is fine too.
 
 All projects (except the Samples projects) use a private key file for signing the assemblies. Jacobi.snk is that key file and is **NOT** checked into source control. It is private to me and a way for users to identify an official release (important for the LGPL license). Also the projects use AssemblyInfo.General.cs/cpp which is also private to me.
 These files are 6 levels up the folder hierarchy (relative to the project file) in my build. You can safely remove these files from all the projects.
@@ -8,7 +10,7 @@ These files are 6 levels up the folder hierarchy (relative to the project file) 
 **Visual Studio Express editions**
 I have written down the steps you need to take to adapt the source code to the Visual Studio Express Editions (VS2008).
 
-* Download the Steinberg VST SDK and copy the aeffect.h and aeffectx.h files into Jacobi.Vst.Interop/\_vst folder. These files are also in the VST3 SDK.
+* Download the Steinberg VST SDK ( https://www.steinberg.net/sdk_downloads/vstsdk366_27_06_2016_build_61.zip ver 3.6.6 ) and copy the aeffect.h and aeffectx.h files from `VST3 SDK\pluginterfaces\vst2.x` into `Jacobi.Vst.Interop\_vst` folder. These files are also in the VST3 SDK. Hint: Newest SDK version doesn't contain VST SDK v2 header files.
 * Create a 'Debug' and 'Release' directory at 'Code' level (where the .sln file is).
 
 * Load solution in C# Express

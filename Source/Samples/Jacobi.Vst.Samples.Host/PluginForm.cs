@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Windows.Forms;
 
 using Jacobi.Vst.Core;
@@ -215,9 +216,20 @@ namespace Jacobi.Vst.Samples.Host
             EditorFrame dlg = new EditorFrame();
             dlg.PluginCommandStub = PluginContext.PluginCommandStub;
 
+            var fromBytes = System.IO.File.ReadAllBytes("j:/code-2.dat");
+            PluginContext.PluginCommandStub.SetChunk(fromBytes, true);
+
             PluginContext.PluginCommandStub.MainsChanged(true);
             dlg.ShowDialog(this);
             PluginContext.PluginCommandStub.MainsChanged(false);
+
+            var bytes = PluginContext.PluginCommandStub.GetChunk(false);
+            Console.WriteLine(bytes.Length);
+            System.IO.File.WriteAllBytes("j:/code-1.dat", bytes);
+
+            bytes = PluginContext.PluginCommandStub.GetChunk(true);
+            Console.WriteLine(bytes.Length);
+            System.IO.File.WriteAllBytes("j:/code-2.dat", bytes);
         }
 
     }
