@@ -25,9 +25,6 @@
     <ClCompile Include="Properties\AssemblyInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\_AssemblyInfo\AssemblyInfo.General.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\AssemblyInfo.Version.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
