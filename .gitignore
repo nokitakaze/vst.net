@@ -1,2 +1,49 @@
 .vs/
 *.cache
+
+# .idea
+.idea/
+*.DotSettings.user
+
+# VST SDK header files
+/Source/Code/Jacobi.Vst.Interop/_vst
+
+# General bin & obj
+/Source/_SharedAssemblies
+/Source/BuildResults
+/Source/Code/_SharedAssemblies
+/Source/Code/BuildResults
+
+# bin & obj per projects
+/Source/Code/Jacobi.Vst.Core/bin
+/Source/Code/Jacobi.Vst.Core/obj
+
+/Source/Code/Jacobi.Vst.Framework/bin
+/Source/Code/Jacobi.Vst.Framework/obj
+
+/Source/Code/Jacobi.Vst.Interop/bin
+/Source/Code/Jacobi.Vst.Interop/obj
+
+/Source/Code/Jacobi.Vst.UnitTest/bin
+/Source/Code/Jacobi.Vst.UnitTest/obj
+
+/Source/Samples/Jacobi.Vst.Samples.CorePlugin/bin
+/Source/Samples/Jacobi.Vst.Samples.CorePlugin/obj
+
+/Source/Samples/Jacobi.Vst.Samples.Delay/bin
+/Source/Samples/Jacobi.Vst.Samples.Delay/obj
+
+/Source/Samples/Jacobi.Vst.Samples.Delay.VB/bin
+/Source/Samples/Jacobi.Vst.Samples.Delay.VB/obj
+
+/Source/Samples/Jacobi.Vst.Samples.Host/bin
+/Source/Samples/Jacobi.Vst.Samples.Host/obj
+
+/Source/Samples/Jacobi.Vst.Samples.MidiNoteMapper/bin
+/Source/Samples/Jacobi.Vst.Samples.MidiNoteMapper/obj
+
+/Source/Samples/Jacobi.Vst.Samples.MidiNoteSampler/bin
+/Source/Samples/Jacobi.Vst.Samples.MidiNoteSampler/obj
+
+/Source/Samples/Jacobi.Vst.Samples.WrapperPlugin/bin
+/Source/Samples/Jacobi.Vst.Samples.WrapperPlugin/obj
