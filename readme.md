@@ -33,6 +33,6 @@ It is very much appreciated if you ...
 
 ---
 
-![](docs/media/Home_VstLogoAlpha92x54.png)
+![](https://cdn.discordapp.com/attachments/568223142724763652/705420220398960650/Home_VSTLogoAlpha92x54.png)
 
 VST is a trademark of Steinberg Media Technologies GmbH.
